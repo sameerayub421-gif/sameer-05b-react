@@ -31,9 +31,9 @@ const CardData =[
 
         <div>
 
-            <h3>{c.id}</h3>
-             <h1>{c.Title}</h1>
-             <p>{c.detail}</p>
+            <h3 className='border-10 m-2 p-3 font-semibold text-xl'>{c.id}</h3>
+             <h1 className='border-10 m-2 p-3 font-extrabold text-4xl'>{c.Title}</h1>
+             <p className='border-10 m-2 p-3'>{c.detail}</p>
 
         </div>
        
