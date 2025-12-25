@@ -6,18 +6,19 @@ import Services from './pages/Services'
 import Contact from './pages/Contact' 
 import Footer from './layout/Footer'
 import Navbar from './layout/Navbar'
+import UseEffectHook from './feature/UseEffectHook'
 
 
 const App = () => {
-  // const [count , setcount] = useState(0)
-  // const changecount = () => {
-  //       setcount (count + 1)
-  // }
+//   // const [count , setcount] = useState(0)
+//   // const changecount = () => {
+//   //       setcount (count + 1)
+//   // }
   return (
     <>
     {/* <p>{count}</p>
     <button onClick={changecount} className='bg-red-400 '>Add count</button> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
@@ -26,7 +27,9 @@ const App = () => {
         <Route path='/services' element={<Services/>}></Route>
       </Routes>
       <Footer/>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      <UseEffectHook/>
     </>
   )
 }
