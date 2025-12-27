@@ -18,7 +18,7 @@ const App = () => {
     <>
     {/* <p>{count}</p>
     <button onClick={changecount} className='bg-red-400 '>Add count</button> */}
-      {/* <BrowserRouter>
+      <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
@@ -27,7 +27,7 @@ const App = () => {
         <Route path='/services' element={<Services/>}></Route>
       </Routes>
       <Footer/>
-      </BrowserRouter> */}
+      </BrowserRouter>
 
       <UseEffectHook/>
     </>
