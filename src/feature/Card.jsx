@@ -3,23 +3,23 @@ import React from 'react'
 
 const Card = () => {
 
-const CardData =[
+  const CardData = [
 
 
-         {
-          id:1,
-          Title:"title 1",
-          detail:"detail 1"
-         },
+    {
+      Img: "1.jpg",
+      Title: "title 1",
+      detail: "detail 1"
+    },
 
-         {
-          id:2,
-          Title:"title 2",
-          detail:"detail 2"
-         },
+    {
+      Img: "1.jpg",
+      Title: "title 2",
+      detail: "detail 2"
+    },
 
 
-]
+  ]
 
 
 
@@ -27,20 +27,24 @@ const CardData =[
 
   return (
     <>
-      {CardData.map((c)=>(
+      <div className=" grid md:grid-cols-4 grid-cols-1 gap-3 place-items-center py-20">
 
-        <div>
+        {CardData.map((c) => (
 
-            <h3 className='border-10 m-2 p-3 font-semibold text-xl'>{c.id}</h3>
-             <h1 className='border-10 m-2 p-3 font-extrabold text-4xl'>{c.Title}</h1>
-             <p className='border-10 m-2 p-3'>{c.detail}</p>
+          <div className='CardBody rounded-2xl border-2 p-3 shadow-2xl'>
+            <div className="CardImg">
+              <img className='rounded-2xl' src={c.Img} alt="" />
+            </div>
+            <div className="CardTitle font-bold ">{c.Title}</div>
+            <div className="CardDetail">{c.detail}</div>
+          </div>
 
-        </div>
-       
 
-      )
+        )
 
-      )}
+        )}
+      </div>
+
     </>
   )
 }
